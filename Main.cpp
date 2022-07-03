@@ -1,5 +1,6 @@
 #include <iostream>
 #include <math.h>
+#include <conio.h>
 using namespace std;
 
 // Declaring Functions
@@ -27,6 +28,7 @@ int main(){
     else{
         cout<< "Please enter a valid operation"<< endl;
     }
+    getch();
     return 0;
 }
 
