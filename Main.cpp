@@ -10,15 +10,23 @@ int main(){
     float radius;
     
     // IO Interface
-    char input[20];
+    char input;
     cout << "Please select one of the desired operations : "<< endl;
-    cout << "Circumfurence" << endl << "Area";
+    cout << "Circumfurence (c)" << endl << "Area (a)" << endl;
     cin >> input;
 
     cout << "Enter Radius of the Circle : ";
     cin >> radius;
-    cout << "Circumfurence : " << circumfurence(radius) << endl;
-    cout << "Area : " << area(radius) << endl;
+
+    if (input == 'a' || input == 'A'){
+        cout << "Area : " << area(radius) << endl;
+    }
+    else if (input == 'c' || input == 'C'){
+        cout << "Circumfurence : " << circumfurence(radius) << endl;
+    }
+    else{
+        cout<< "Please enter a valid operation"<< endl;
+    }
     return 0;
 }
 
